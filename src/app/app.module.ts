@@ -10,6 +10,7 @@ import { NotFoundPageComponent } from './pages/not-found-page/not-found-page.com
 import { HeaderComponent } from './components/header/header.component';
 import { TitleComponent } from './components/champions-page/title/title.component';
 import { ChampionListComponent } from './components/champions-page/champion-list/champion-list.component';
+import { ChampionCardComponent } from './components/champions-page/champion-card/champion-card.component';
 @NgModule({
   declarations: [
     HeaderComponent,
@@ -20,6 +21,7 @@ import { ChampionListComponent } from './components/champions-page/champion-list
     HeaderComponent,
     TitleComponent,
     ChampionListComponent,
+    ChampionCardComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],

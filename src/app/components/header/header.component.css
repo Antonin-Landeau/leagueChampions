@@ -97,3 +97,24 @@
 .open {
   left: 0%;
 }
+
+.link-list {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  list-style-type: none;
+  padding: 20px;
+}
+
+.link-item a {
+  text-decoration: none;
+  padding: 10px;
+  font-size: 16px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.link-item {
+  margin: 15px 0;
+}

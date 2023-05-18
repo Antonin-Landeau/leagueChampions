@@ -1,7 +1,7 @@
 <div *ngIf="isLoading">Loading...</div>
-<div *ngIf="champions && !isError">
+<div *ngIf="champions && !isError" class="card-container">
   <div *ngFor="let champion of champions">
-    {{ champion.name }}
+    <app-champion-card [champion]="champion"></app-champion-card>
   </div>
 </div>
 <div *ngIf="isError">Somthing went wrong try again later</div>
