@@ -1,0 +1,7 @@
+<div *ngIf="isLoading">Loading...</div>
+<div *ngIf="champions && !isError">
+  <div *ngFor="let champion of champions">
+    {{ champion.name }}
+  </div>
+</div>
+<div *ngIf="isError">Somthing went wrong try again later</div>

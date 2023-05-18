@@ -1,1 +1,8 @@
-<p>champions-page works!</p>
+<div class="container">
+  <app-title></app-title>
+  <app-champion-list
+    [champions]="champions"
+    [isLoading]="isLoading"
+    [isError]="isError"
+  ></app-champion-list>
+</div>
