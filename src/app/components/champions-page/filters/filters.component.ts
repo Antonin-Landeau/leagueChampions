@@ -8,6 +8,7 @@ import { Component, Output, EventEmitter } from '@angular/core';
 export class FiltersComponent {
   @Output() setInputField: EventEmitter<string> = new EventEmitter<string>();
   @Output() setRole: EventEmitter<string> = new EventEmitter<string>();
+  @Output() setDifficulty: EventEmitter<string> = new EventEmitter<string>();
 
   roles: string[] = [
     'Assassin',
@@ -18,6 +19,8 @@ export class FiltersComponent {
     'Tank',
   ];
 
+  difficulties: string[] = ['1', '2', '3'];
+
   onInputChange(e: Event): void {
     const inputValue = (e.target as HTMLInputElement).value;
     this.setInputField.emit(inputValue);
@@ -25,5 +28,8 @@ export class FiltersComponent {
 
   handleRoleChange(role: string): void {
     this.setRole.emit(role);
+  }
+  handleDifficultyChange(difficulty: string): void {
+    this.setDifficulty.emit(difficulty);
   }
 }

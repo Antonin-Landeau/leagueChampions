@@ -14,15 +14,23 @@
         d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
       ></path>
     </svg>
-    <input
-      placeholder="Search..."
-      type="text"
-      (input)="onInputChange($event)"
-    />
+    <input type="text" (input)="onInputChange($event)" />
   </div>
-  <app-select-dropdown
-    title="All Roles"
-    [values]="roles"
-    (setValue)="handleRoleChange($event)"
-  ></app-select-dropdown>
+  <div class="dropdown-container">
+    <app-select-dropdown
+      class="dropdown"
+      title="All Roles"
+      [values]="roles"
+      (setValue)="handleRoleChange($event)"
+      type="string"
+    >
+    </app-select-dropdown>
+    <app-select-dropdown
+      class="dropdown"
+      title="All difficulties"
+      [values]="difficulties"
+      (setValue)="handleDifficultyChange($event)"
+      type="difficulties"
+    ></app-select-dropdown>
+  </div>
 </div>

@@ -3,6 +3,7 @@
   <app-filters
     (setInputField)="handleSearchInput($event)"
     (setRole)="handleRoleChange($event)"
+    (setDifficulty)="handleDifficulty($event)"
   ></app-filters>
   <app-champion-list
     [champions]="filteredChampions"

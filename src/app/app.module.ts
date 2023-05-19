@@ -13,6 +13,7 @@ import { ChampionListComponent } from './components/champions-page/champion-list
 import { ChampionCardComponent } from './components/champions-page/champion-card/champion-card.component';
 import { FiltersComponent } from './components/champions-page/filters/filters.component';
 import { SelectDropdownComponent } from './shared/select-dropdown/select-dropdown.component';
+import { DifficultyIconComponent } from './shared/difficulty-icon/difficulty-icon.component';
 @NgModule({
   declarations: [
     HeaderComponent,
@@ -26,6 +27,7 @@ import { SelectDropdownComponent } from './shared/select-dropdown/select-dropdow
     ChampionCardComponent,
     FiltersComponent,
     SelectDropdownComponent,
+    DifficultyIconComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],

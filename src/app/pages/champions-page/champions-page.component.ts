@@ -17,6 +17,7 @@ export class ChampionsPageComponent implements OnInit {
   filter: Filter = {
     search: '',
     tag: '',
+    difficulty: '',
   };
 
   constructor(private championsService: ChampionsService) {}
@@ -53,9 +54,12 @@ export class ChampionsPageComponent implements OnInit {
     this.filterChampions(this.filter);
   }
 
+  handleDifficulty(difficulty: string) {
+    this.filter = { ...this.filter, difficulty: difficulty };
+    this.filterChampions(this.filter);
+  }
+
   filterChampions(filters: Filter) {
-    console.log('my filtermethod is called');
-    console.log('Filters : ', filters);
 
     //apply the search input filter
     let newChampArray = this.champions.filter((champion) =>
@@ -67,6 +71,31 @@ export class ChampionsPageComponent implements OnInit {
       newChampArray = newChampArray.filter((champion) =>
         champion.tags?.includes(filters.tag)
       );
+    }
+
+    //apply the difficulty input filter
+
+    if (this.filter.difficulty.length > 0) {
+      switch (this.filter.difficulty) {
+        case '1':
+          newChampArray = newChampArray.filter(
+            (champion) => champion.info.difficulty <= 4
+          );
+          break;
+        case '2':
+          newChampArray = newChampArray.filter(
+            (champion) =>
+              champion.info.difficulty > 4 && champion.info.difficulty <= 7
+          );
+          break;
+        case '3':
+          newChampArray = newChampArray.filter(
+            (champion) => champion.info.difficulty > 7
+          );
+          break;
+        default:
+          break;
+      }
     }
 
     console.log(newChampArray);

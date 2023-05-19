@@ -23,3 +23,11 @@
   padding: 5px;
   margin: 20px 0;
 }
+.dropdown-container {
+  display: flex;
+  width: 100%;
+}
+
+.dropdown {
+  width: 100%;
+}

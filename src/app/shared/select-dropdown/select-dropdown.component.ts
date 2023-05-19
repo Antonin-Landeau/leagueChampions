@@ -5,6 +5,8 @@ import {
   ElementRef,
   Output,
   EventEmitter,
+  ContentChild,
+  TemplateRef,
 } from '@angular/core';
 
 @Component({
@@ -16,6 +18,9 @@ export class SelectDropdownComponent {
   @Output() setValue: EventEmitter<string> = new EventEmitter<string>();
   @Input() values: string[] = [];
   @Input() title: string = '';
+  @Input() type: string = 'string';
+
+  @ContentChild(TemplateRef) templateRef!: TemplateRef<any>;
 
   isOpen: boolean = false;
 
