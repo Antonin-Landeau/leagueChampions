@@ -20,4 +20,9 @@
       (input)="onInputChange($event)"
     />
   </div>
+  <app-select-dropdown
+    title="All Roles"
+    [values]="roles"
+    (setValue)="handleRoleChange($event)"
+  ></app-select-dropdown>
 </div>

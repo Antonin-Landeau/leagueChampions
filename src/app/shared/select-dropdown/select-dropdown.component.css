@@ -1,0 +1,54 @@
+.selected-field svg {
+  margin-left: 5px;
+  width: 15px;
+  height: 15px;
+  fill: #f0ae30;
+}
+
+.selected-field {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  width: 100%;
+}
+
+.selected-field-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.chevron {
+  display: block;
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  fill: #f0ae30;
+  transition: all .2s ease-out
+}
+
+.dropdown-container {
+  font-size: 10px;
+  text-transform: uppercase;
+  color: black;
+  font-weight: 600;
+  position: relative;
+  border-bottom: 1px solid rgb(193, 193, 193);
+  border-top: 1px solid rgb(193, 193, 193);
+}
+
+.options-container {
+  position: absolute;
+  z-index: 10;
+  width: 102%;
+  background: white;
+  left: 0;
+}
+
+.option-item div {
+  padding: 10px 15px;
+}
+
+.open {
+  transform: rotate(180deg);
+}

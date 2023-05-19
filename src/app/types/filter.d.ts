@@ -1,5 +1,5 @@
 export interface Filter {
-  tags?: string;
+  tag: string;
   difficulty?: '1' | '2' | '3';
   search: string;
 }

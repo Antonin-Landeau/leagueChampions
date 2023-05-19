@@ -12,6 +12,7 @@ import { TitleComponent } from './components/champions-page/title/title.componen
 import { ChampionListComponent } from './components/champions-page/champion-list/champion-list.component';
 import { ChampionCardComponent } from './components/champions-page/champion-card/champion-card.component';
 import { FiltersComponent } from './components/champions-page/filters/filters.component';
+import { SelectDropdownComponent } from './shared/select-dropdown/select-dropdown.component';
 @NgModule({
   declarations: [
     HeaderComponent,
@@ -24,6 +25,7 @@ import { FiltersComponent } from './components/champions-page/filters/filters.co
     ChampionListComponent,
     ChampionCardComponent,
     FiltersComponent,
+    SelectDropdownComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],
