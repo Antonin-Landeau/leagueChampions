@@ -11,6 +11,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { TitleComponent } from './components/champions-page/title/title.component';
 import { ChampionListComponent } from './components/champions-page/champion-list/champion-list.component';
 import { ChampionCardComponent } from './components/champions-page/champion-card/champion-card.component';
+import { FiltersComponent } from './components/champions-page/filters/filters.component';
 @NgModule({
   declarations: [
     HeaderComponent,
@@ -22,6 +23,7 @@ import { ChampionCardComponent } from './components/champions-page/champion-card
     TitleComponent,
     ChampionListComponent,
     ChampionCardComponent,
+    FiltersComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],
