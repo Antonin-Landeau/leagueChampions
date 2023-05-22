@@ -14,6 +14,9 @@ import { ChampionCardComponent } from './components/champions-page/champion-card
 import { FiltersComponent } from './components/champions-page/filters/filters.component';
 import { SelectDropdownComponent } from './shared/select-dropdown/select-dropdown.component';
 import { DifficultyIconComponent } from './shared/difficulty-icon/difficulty-icon.component';
+import { ChampionPageComponent } from './pages/champion-page/champion-page.component';
+import { RoleIconComponent } from './shared/role-icon/role-icon.component';
+import { RoleDifficultySectionComponent } from './components/champion-page/role-difficulty-section/role-difficulty-section.component';
 @NgModule({
   declarations: [
     HeaderComponent,
@@ -28,6 +31,9 @@ import { DifficultyIconComponent } from './shared/difficulty-icon/difficulty-ico
     FiltersComponent,
     SelectDropdownComponent,
     DifficultyIconComponent,
+    ChampionPageComponent,
+    RoleIconComponent,
+    RoleDifficultySectionComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],

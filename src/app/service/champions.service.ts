@@ -13,5 +13,11 @@ export class ChampionsService {
       'http://ddragon.leagueoflegends.com/cdn/13.10.1/data/en_US/champion.json'
     );
   }
-  
+  getChampion(id: string): Observable<any> {
+    return this.http.get<any>(
+      'http://ddragon.leagueoflegends.com/cdn/13.10.1/data/en_US/champion/' +
+        id +
+        '.json'
+    );
+  }
 }
